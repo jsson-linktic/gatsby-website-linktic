@@ -1,5 +1,10 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
+
+import Bio from "../components/bio"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+import { rhythm } from "../utils/typography"
 
 class BlogIndex extends React.Component {
   render() {
@@ -8,41 +13,10 @@ class BlogIndex extends React.Component {
     const posts = data.allMarkdownRemark.edges
 
     return (
-      <>
-        
-        <div class="section-header position-absolute">
-          <div class="container space-between align-middle">
-            <div data-collapse="medium" data-animation="default" data-duration="400" class="navbar w-nav">
-              <div class="navbar-container align-middle w-container">
-                <div class="col lg-4 order-first no-padding-left no-margin-bottom flex-horizontal lg-2 md-4 xs-8">
-                  <div class="menu-and-logo-container order-first"><a data-w-id="7d050a59-b525-e710-dbfb-70b18fafaf10" href="#" class="offcanvas-button margin-right w-inline-block"><img src={require('../../images/burger-menu-icon-white.svg')} alt=""/></a>
-                    <a href="#" class="brand w-nav-brand">
-                      <h3 class="logotype on-dark">e—<br/>tan</h3>
-                    </a>
-                  </div>
-                </div>
-                <div class="col lg-4 no-margin-bottom flexh-justify-center position-absolute-md lg-8">
-                  <nav role="navigation" class="nav-menu w-nav-menu"><a href="about.html" class="nav-link on-dark w-nav-link">About</a>
-                    <div data-hover="1" data-delay="0" data-w-id="7d050a59-b525-e710-dbfb-70b18fafaf1a" class="nav-dropdown w-dropdown">
-                      <div class="nav-link on-dark w-dropdown-toggle">
-                        <div class="w-icon-dropdown-toggle"></div>
-                        <div>Our work</div>
-                      </div>
-                      <nav class="dropdown-list w-dropdown-list"><a href="our-work.html" class="dropdown-link w-dropdown-link">Fullwidth gallery</a><a href="our-work-2.html" class="dropdown-link w-dropdown-link">Standard gallery</a></nav>
-                    </div><a href="services.html" class="nav-link on-dark w-nav-link">Services</a><a href="news.html" class="nav-link on-dark w-nav-link">News</a><a href="contact-us.html" class="nav-link on-dark w-nav-link">Contact </a></nav>
-                </div>
-                <div class="menu-button w-nav-button"><img src={require('../../images/burger-menu-icon-white.svg')} alt="" class="burger-menu-icon"/></div>
-                <div class="col lg-4 no-margin-bottom flexh-justify-end no-padding-right grow hidden-xs lg-2">
-                  <div class="extra-menu"><a href="hiring.html" class="extra-menu-link margin-left nav-link on-dark">We&#x27;re hiring</a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
+      <Layout location={this.props.location} title={siteTitle}>
         <div class="section is-header _100vh position-relative flexv-justify-end">
           <div data-poster-url="videos/wavy-poster-00001.jpg" data-video-urls="videos/dummy.mp4,videos/dummy.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" class="bg-video w-background-video w-background-video-atom">
-            <video autoplay="" loop="" muted="" playsinline="" data-wf-ignore="true"><source src="videos/dummy.mp4" data-wf-ignore="true"/><source src="videos/dummy.webm" data-wf-ignore="true"/></video>
+            <video autoplay="" loop="" muted="" playsinline="" data-wf-ignore="true"><source src={require('../../videos/dummy.mp4')} data-wf-ignore="true"/><source src={require('../../videos/dummy.webm')} data-wf-ignore="true"/></video>
           </div>
           <div data-delay="4000" data-animation="outin" data-autoplay="1" data-duration="500" data-infinite="1" data-w-id="ba5d81d6-f355-4907-f1e1-029f7110022c" class="c-hero1__slider relative-zindex10 on-dark w-slider">
             <div class="w-slider-mask">
@@ -569,7 +543,7 @@ class BlogIndex extends React.Component {
             <div class="offcanvas-menu-item-wrapper"><a href="#" class="offcanvas-menu-item item4">Pricing</a></div>
           </div>
         </div>
-      </>
+      </Layout>
     )
   }
 }
