@@ -4,7 +4,7 @@ import Layout from "../components/layout";
 class services extends Component {
     render() {
         return (
-            <Layout location={this.props.location} title={"about"}>
+            <Layout location={this.props.location} title={"services"}>
                 <div class="section is-header bg-accent-dark has-bg-img position-relative">
                     <div class="gradient-overlay hidden-only-lg"></div>
                     <div class="container flex-horizontal position-relative">

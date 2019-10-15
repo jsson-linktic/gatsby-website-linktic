@@ -31,11 +31,11 @@ export default ({ children }) => (
                     <div><ListLink to="/about/">Our work</ListLink></div>
                   </div>
                   <nav class="dropdown-list w-dropdown-list"><a href="our-work.html" class="dropdown-link w-dropdown-link">Fullwidth gallery</a><a href="our-work-2.html" class="dropdown-link w-dropdown-link">Standard gallery</a></nav>
-                </div><span class="nav-link on-dark w-nav-link"><ListLink to="/services/">Services</ListLink></span><span class="nav-link on-dark w-nav-link"><ListLink to="/about/">News</ListLink></span><span href="contact-us.html" class="nav-link on-dark w-nav-link"><ListLink to="/about/">Contact</ListLink> </span></nav>
+                </div><span class="nav-link on-dark w-nav-link"><ListLink to="/services/">Services</ListLink></span><span class="nav-link on-dark w-nav-link"><ListLink to="/news/">News</ListLink></span><span class="nav-link on-dark w-nav-link"><ListLink to="/contact-us/">Contact</ListLink> </span></nav>
             </div>
             <div class="menu-button w-nav-button"><img src={require('../../images/burger-menu-icon-white.svg')} alt="" class="burger-menu-icon"/></div>
             <div class="col lg-4 no-margin-bottom flexh-justify-end no-padding-right grow hidden-xs lg-2">
-              <div class="extra-menu"><span href="hiring.html" class="extra-menu-link margin-left nav-link on-dark"><ListLink to="/about/">We&#x27;re hiring</ListLink></span></div>
+              <div class="extra-menu"><span class="extra-menu-link margin-left nav-link on-dark"><ListLink to="/hiring/">We&#x27;re hiring</ListLink></span></div>
             </div>
           </div>
         </div>

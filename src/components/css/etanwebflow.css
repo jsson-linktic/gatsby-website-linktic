@@ -2501,6 +2501,7 @@ figcaption {
 
 .c-hero1__slider.relative-zindex10 {
   z-index: 10;
+  top: 130px !important;
 }
 
 .c-hero1__left-arrow {
