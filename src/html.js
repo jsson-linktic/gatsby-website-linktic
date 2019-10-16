@@ -15,8 +15,15 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+          {}
+        </script>
         <Helmet>
             <script src={withPrefix('script.js')} type="text/javascript" />
+        </Helmet>
+        
+        <Helmet>
+            <script src={withPrefix('webflow.js')} type="text/javascript" />
         </Helmet>
         {props.headComponents}
       </head>
@@ -31,9 +38,7 @@ export default function HTML(props) {
           dangerouslySetInnerHTML={{ __html: props.body }}
         />
         {props.postBodyComponents}
-        <Helmet>
-            <script src={withPrefix('webflow.js')} type="text/javascript" />
-        </Helmet>
+        
       </body>
     </html>
   )
