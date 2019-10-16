@@ -34,7 +34,7 @@ export default ({ children }) => (
                 <div data-hover="1" data-delay="0" data-w-id="7d050a59-b525-e710-dbfb-70b18fafaf1a" className="nav-dropdown w-dropdown">
                   <div className="nav-link on-dark w-dropdown-toggle">
                     <div className="w-icon-dropdown-toggle"></div>
-                    <ListLink to="/about/"><div>Our work</div></ListLink>
+                    <div>Our work</div>
                   </div>
                   <nav className="dropdown-list w-dropdown-list"><ListLink to="/our-work/"><a className="dropdown-link w-dropdown-link">Fullwidth gallery</a></ListLink><ListLink to="/our-work-2/"><a className="dropdown-link w-dropdown-link">Standard gallery</a></ListLink></nav>
                 </div><span className="nav-link on-dark w-nav-link"><ListLink to="/services/">Services</ListLink></span><span className="nav-link on-dark w-nav-link"><ListLink to="/news/">News</ListLink></span><span className="nav-link on-dark w-nav-link"><ListLink to="/contact-us/">Contact</ListLink> </span></nav>
